@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Fleet | Transportation Services Vehicle Showcase</title>
+  <meta name="description" content="Explore our illustrative vehicle fleet: executive sedans, premium SUVs, and group travel vans. Compare capacities, amenities, and comfort standards.">
+  <link rel="canonical" href="https://example.com/fleet.html">
+  <meta property="og:title" content="Our Fleet | Transportation Services">
+  <meta property="og:description" content="Premium automotive fleet showcase for executive mobility, family transfers, and group charters.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-identity" aria-label="Transportation Services Home">
+        <div class="brand-symbol">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="2" width="40" height="40" rx="10" stroke="url(#logoGlowFleet)" stroke-width="2.5" fill="#142236"/>
+            <path d="M12 28L22 14L32 28" stroke="#42C5E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 22H28" stroke="#F2A65A" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="22" cy="14" r="3" fill="#FFFFFF"/>
+            <defs>
+              <linearGradient id="logoGlowFleet" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#42C5E8"/>
+                <stop offset="1" stop-color="#2765A8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">TRANSPORTATION SERVICES</span>
+          <span class="brand-subline">Premium Mobility Solutions</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="fleet.html" class="nav-link active">Fleet</a></li>
+          <li><a href="corporate.html" class="nav-link">Corporate Travel</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-cta-group">
+          <a href="contact.html" class="btn btn-primary btn-sm">
+            <span>Request a Trip</span>
+            <span class="btn-icon-arrow">→</span>
+          </a>
+        </div>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-top">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="fleet.html" class="mobile-nav-link active">Fleet</a></li>
+        <li><a href="corporate.html" class="mobile-nav-link">Corporate Travel</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-drawer-bottom">
+      <a href="contact.html" class="btn btn-cyan" style="width: 100%;">
+        <span>Request a Trip</span>
+        <span>→</span>
+      </a>
+      <p style="font-size: 0.75rem; color: var(--color-grey-muted); margin-top: 1.25rem; text-align: center;">
+        TSCG Technologies Demo Portfolio
+      </p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- Subpage Hero -->
+    <section class="subpage-hero" aria-labelledby="fleet-hero-title">
+      <div class="container">
+        <div class="subpage-hero-grid">
+          <div class="subpage-hero-content reveal">
+            <nav class="breadcrumb-trail" aria-label="Breadcrumb">
+              <a href="index.html">Home</a>
+              <span class="breadcrumb-separator">/</span>
+              <span>Our Fleet</span>
+            </nav>
+            <div class="eyebrow">Vehicle Showcase</div>
+            <h1 id="fleet-hero-title" class="editorial-headline">
+              PREMIUM MOBILITY FLEET.
+            </h1>
+            <p class="editorial-subheadline">
+              A curated lineup of passenger vehicle categories designed for discrete executive comfort, spacious group transfers, and effortless road travel.
+            </p>
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="image-placeholder aspect-21-9">
+              <img src="images/fleet-lineup-overview.jpeg" alt="Automotive editorial composition displaying Sedan, SUV, and Van lineup with studio lighting" loading="eager" width="2560" height="1080">
+              <div class="image-placeholder-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet Showcase & Filters -->
+    <section class="section-padding section-dark" aria-label="Fleet vehicle selection">
+      <div class="container">
+
+        <!-- Category Filter Bar -->
+        <div class="fleet-filter-bar reveal">
+          <button type="button" class="filter-btn active" data-filter="all">All Vehicles</button>
+          <button type="button" class="filter-btn" data-filter="sedan">Executive Sedans</button>
+          <button type="button" class="filter-btn" data-filter="suv">Premium SUVs</button>
+          <button type="button" class="filter-btn" data-filter="van">Group Travel Vans</button>
+        </div>
+
+        <!-- Fleet Grid (6 Illustrative Models across 3 Categories) -->
+        <div class="fleet-grid-3">
+
+          <!-- 1. Executive Sedan - Class Standard -->
+          <article class="fleet-card fleet-card-item reveal" data-category="sedan">
+            <div class="fleet-card-media">
+              <div class="image-placeholder aspect-16-10">
+                <img src="images/fleet-sedan-mercedes-e-class.jpeg" alt="Executive saloon profile in metallic charcoal with reflections of modern architectural glass" loading="lazy" width="1920" height="1200">
+                <div class="image-placeholder-overlay"></div>
+              </div>
+              <span class="fleet-badge-floating">Sedan Tier A</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3 class="fleet-category-name">Executive Sedan (Class E)</h3>
+              <p class="fleet-suitability">Suggested journey type: Airport transfers, corporate client hosting, and urban business itineraries.</p>
+
+              <div class="fleet-capacity-row">
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Capacity</span>
+                    <span class="capacity-value">Up to 3-4</span>
+                  </div>
+                </div>
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Luggage</span>
+                    <span class="capacity-value">2 Large Bags</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="demo-disclaimer-pill">
+                <span>⚠ Illustrative demo specifications</span>
+              </div>
+
+              <div class="fleet-card-actions">
+                <button type="button" class="btn btn-outline btn-sm view-vehicle-btn"
+                  data-name="Executive Sedan (Class E)"
+                  data-category-label="Executive Sedans"
+                  data-passengers="Up to 3-4 Passengers (Illustrative Demo)"
+                  data-luggage="2 Large Suitcases + 2 Hand Bags"
+                  data-journey="Airport transfers, executive appointments, boardroom transit"
+                  data-desc="Refined acoustic insulation, leather appointments, independent rear climate zones, and smooth highway handling."
+                  data-image-file="images/fleet-sedan-mercedes-e-class.jpeg">
+                  View Vehicle
+                </button>
+                <a href="contact.html?vehicle=sedan-e" class="btn btn-cyan btn-sm">Request</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Executive Sedan - Long Wheelbase -->
+          <article class="fleet-card fleet-card-item reveal reveal-delay-1" data-category="sedan">
+            <div class="fleet-card-media">
+              <div class="image-placeholder aspect-16-10">
+                <img src="images/fleet-sedan-bmw-series.jpeg" alt="Extended executive sedan in deep midnight blue with illuminated side profile" loading="lazy" width="1920" height="1200">
+                <div class="image-placeholder-overlay"></div>
+              </div>
+              <span class="fleet-badge-floating">Sedan Tier B</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3 class="fleet-category-name">Executive Sedan (Extended)</h3>
+              <p class="fleet-suitability">Suggested journey type: VIP delegate receptions, dignitary transfers, and roadshow itineraries.</p>
+
+              <div class="fleet-capacity-row">
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Capacity</span>
+                    <span class="capacity-value">Up to 3</span>
+                  </div>
+                </div>
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Luggage</span>
+                    <span class="capacity-value">3 Suitcases</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="demo-disclaimer-pill">
+                <span>⚠ Illustrative demo specifications</span>
+              </div>
+
+              <div class="fleet-card-actions">
+                <button type="button" class="btn btn-outline btn-sm view-vehicle-btn"
+                  data-name="Executive Sedan (Extended)"
+                  data-category-label="Executive Sedans"
+                  data-passengers="Up to 3 Passengers (Illustrative Demo)"
+                  data-luggage="3 Suitcases + Cabin Bags"
+                  data-journey="VIP delegation receptions, executive summits, discreet travel"
+                  data-desc="Extended rear legroom, rear passenger power blinds, reclining seat controls, and onboard device charging hubs."
+                  data-image-file="images/fleet-sedan-bmw-series.jpeg">
+                  View Vehicle
+                </button>
+                <a href="contact.html?vehicle=sedan-ext" class="btn btn-cyan btn-sm">Request</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Premium SUV - Full Size -->
+          <article class="fleet-card fleet-card-item reveal reveal-delay-2" data-category="suv">
+            <div class="fleet-card-media">
+              <div class="image-placeholder aspect-16-10">
+                <img src="images/fleet-suv-land-cruiser.jpeg" alt="Commanding full-size luxury SUV parked on scenic coastal highway" loading="lazy" width="1920" height="1200">
+                <div class="image-placeholder-overlay"></div>
+              </div>
+              <span class="fleet-badge-floating">SUV Tier A</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3 class="fleet-category-name">Premium Full-Size SUV</h3>
+              <p class="fleet-suitability">Suggested journey type: Intercity trips, family airport journeys, and site visits requiring road resilience.</p>
+
+              <div class="fleet-capacity-row">
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Capacity</span>
+                    <span class="capacity-value">Up to 4-6</span>
+                  </div>
+                </div>
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Luggage</span>
+                    <span class="capacity-value">4-5 Bags</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="demo-disclaimer-pill">
+                <span>⚠ Illustrative demo specifications</span>
+              </div>
+
+              <div class="fleet-card-actions">
+                <button type="button" class="btn btn-outline btn-sm view-vehicle-btn"
+                  data-name="Premium Full-Size SUV"
+                  data-category-label="Premium SUVs"
+                  data-passengers="Up to 4-6 Passengers (Illustrative Demo)"
+                  data-luggage="4-5 Large Suitcases"
+                  data-journey="Intercity highways, regional journeys, family airport travel"
+                  data-desc="All-wheel drive stability, elevated passenger commanding view, tri-zone air filtering, and substantial rear luggage trunk."
+                  data-image-file="images/fleet-suv-land-cruiser.jpeg">
+                  View Vehicle
+                </button>
+                <a href="contact.html?vehicle=suv-full" class="btn btn-cyan btn-sm">Request</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Premium SUV - Executive Cross -->
+          <article class="fleet-card fleet-card-item reveal" data-category="suv">
+            <div class="fleet-card-media">
+              <div class="image-placeholder aspect-16-10">
+                <img src="images/fleet-suv-audi-q7.jpeg" alt="Refined aerodynamic crossover SUV in metallic silver parked outside tech center" loading="lazy" width="1920" height="1200">
+                <div class="image-placeholder-overlay"></div>
+              </div>
+              <span class="fleet-badge-floating">SUV Tier B</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3 class="fleet-category-name">Executive Crossover SUV</h3>
+              <p class="fleet-suitability">Suggested journey type: Airport transfers with extra golf bags, business travel, and city commutes.</p>
+
+              <div class="fleet-capacity-row">
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Capacity</span>
+                    <span class="capacity-value">Up to 4</span>
+                  </div>
+                </div>
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Luggage</span>
+                    <span class="capacity-value">3-4 Bags</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="demo-disclaimer-pill">
+                <span>⚠ Illustrative demo specifications</span>
+              </div>
+
+              <div class="fleet-card-actions">
+                <button type="button" class="btn btn-outline btn-sm view-vehicle-btn"
+                  data-name="Executive Crossover SUV"
+                  data-category-label="Premium SUVs"
+                  data-passengers="Up to 4 Passengers (Illustrative Demo)"
+                  data-luggage="3-4 Suitcases + Sporting Equipment"
+                  data-journey="Executive airport connections, golf outings, weekend retreats"
+                  data-desc="Smooth adaptive air suspension, whisper-quiet cabin acoustics, and modular fold-flat rear seating configuration."
+                  data-image-file="images/fleet-suv-audi-q7.jpeg">
+                  View Vehicle
+                </button>
+                <a href="contact.html?vehicle=suv-cross" class="btn btn-cyan btn-sm">Request</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Group Travel Van - Executive Minibus -->
+          <article class="fleet-card fleet-card-item reveal reveal-delay-1" data-category="van">
+            <div class="fleet-card-media">
+              <div class="image-placeholder aspect-16-10">
+                <img src="images/fleet-van-mercedes-sprinter.jpeg" alt="Executive touring van with high roof and privacy windows at convention plaza" loading="lazy" width="1920" height="1200">
+                <div class="image-placeholder-overlay"></div>
+              </div>
+              <span class="fleet-badge-floating">Van Tier A</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3 class="fleet-category-name">Executive Touring Van</h3>
+              <p class="fleet-suitability">Suggested journey type: Conference delegate transfers, corporate delegations, and VIP team transport.</p>
+
+              <div class="fleet-capacity-row">
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Capacity</span>
+                    <span class="capacity-value">Up to 9-12</span>
+                  </div>
+                </div>
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Luggage</span>
+                    <span class="capacity-value">10-12 Bags</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="demo-disclaimer-pill">
+                <span>⚠ Illustrative demo specifications</span>
+              </div>
+
+              <div class="fleet-card-actions">
+                <button type="button" class="btn btn-outline btn-sm view-vehicle-btn"
+                  data-name="Executive Touring Van"
+                  data-category-label="Group Travel Vans"
+                  data-passengers="Up to 9-12 Passengers (Illustrative Demo)"
+                  data-luggage="10-12 Suitcases &amp; Event Boxes"
+                  data-journey="Convention delegations, corporate site tours, synchronized hotel shuttles"
+                  data-desc="Stand-up ceiling height, individual captain chairs, overhead storage racks, and USB charging points at every row."
+                  data-image-file="images/fleet-van-mercedes-sprinter.jpeg">
+                  View Vehicle
+                </button>
+                <a href="contact.html?vehicle=van-touring" class="btn btn-cyan btn-sm">Request</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Group Travel Van - Standard Passenger Commuter -->
+          <article class="fleet-card fleet-card-item reveal reveal-delay-2" data-category="van">
+            <div class="fleet-card-media">
+              <div class="image-placeholder aspect-16-10">
+                <img src="images/fleet-van-toyota-hiace.jpeg" alt="Reliable multi-passenger transit van parked beside modern terminal pickup lane" loading="lazy" width="1920" height="1200">
+                <div class="image-placeholder-overlay"></div>
+              </div>
+              <span class="fleet-badge-floating">Van Tier B</span>
+            </div>
+            <div class="fleet-card-body">
+              <h3 class="fleet-category-name">Passenger Group Commuter</h3>
+              <p class="fleet-suitability">Suggested journey type: Staff workplace shuttles, wedding guest movements, and group day trips.</p>
+
+              <div class="fleet-capacity-row">
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Capacity</span>
+                    <span class="capacity-value">Up to 10-14</span>
+                  </div>
+                </div>
+                <div class="capacity-item">
+                  <div class="capacity-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div class="capacity-data">
+                    <span class="capacity-label">Luggage</span>
+                    <span class="capacity-value">8-10 Bags</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="demo-disclaimer-pill">
+                <span>⚠ Illustrative demo specifications</span>
+              </div>
+
+              <div class="fleet-card-actions">
+                <button type="button" class="btn btn-outline btn-sm view-vehicle-btn"
+                  data-name="Passenger Group Commuter"
+                  data-category-label="Group Travel Vans"
+                  data-passengers="Up to 10-14 Passengers (Illustrative Demo)"
+                  data-luggage="8-10 Suitcases"
+                  data-journey="Employee shift transportation, wedding guest logistics, tour outings"
+                  data-desc="High-efficiency passenger configuration, effective multi-zone air conditioning, and durable fabric seating."
+                  data-image-file="images/fleet-van-toyota-hiace.jpeg">
+                  View Vehicle
+                </button>
+                <a href="contact.html?vehicle=van-commuter" class="btn btn-cyan btn-sm">Request</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet Standards & Maintenance Section -->
+    <section class="section-padding section-charcoal" aria-labelledby="fleet-standards-heading">
+      <div class="container">
+        <div class="split-content-row">
+          <div class="reveal">
+            <div class="eyebrow eyebrow-amber">Quality Assurance</div>
+            <h2 id="fleet-standards-heading" class="editorial-headline" style="font-size: clamp(1.8rem, 3.2vw, 2.75rem);">
+              Rigorous Vehicle Care &amp; Preparedness.
+            </h2>
+            <p style="color: var(--color-grey-muted); margin-top: 1.25rem; line-height: 1.7;">
+              Every passenger vehicle represents the brand. Our maintenance framework outlines scheduled mechanical checkups, daily interior sanitization, and tire-safety evaluations before any passenger assignment.
+            </p>
+            <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.85rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#42C5E8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span style="color: var(--color-white); font-weight: 600;">Daily multi-point pre-trip cabin sanitation</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#42C5E8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span style="color: var(--color-white); font-weight: 600;">Regulated tire tread and braking diagnostic checks</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#42C5E8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span style="color: var(--color-white); font-weight: 600;">HVAC air conditioning filter cleansing for fresh airflow</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-2">
+            <div class="image-placeholder aspect-16-9">
+              <img src="images/fleet-vehicle-maintenance.jpeg" alt="Technicians performing precision safety check on executive vehicle in spotless service bay" loading="lazy" width="2560" height="1440">
+              <div class="image-placeholder-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Component for Fleet Details -->
+    <div class="modal-overlay" id="vehicleModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalVehicleTitle">
+      <div class="modal-container">
+        <button class="modal-close-btn" aria-label="Close vehicle details">✕</button>
+        <div class="modal-body">
+          <div class="modal-vehicle-header">
+            <span class="eyebrow eyebrow-amber" id="modalVehicleCategory">Vehicle Specification</span>
+            <h2 class="modal-vehicle-title" id="modalVehicleTitle">Vehicle Name</h2>
+          </div>
+
+          <!-- Modal Vehicle Graphic -->
+          <div class="modal-vehicle-img-frame">
+            <img id="modalVehicleImg" src="images/fleet-sedan-mercedes-e-class.jpeg" alt="Technical vehicle profile" loading="lazy">
+          </div>
+
+          <p id="modalVehicleDesc" style="color: var(--color-grey-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+            Detailed vehicle description.
+          </p>
+
+          <table class="modal-specs-table">
+            <tbody>
+              <tr>
+                <td>Passenger Capacity</td>
+                <td id="modalVehiclePassengers">Illustrative: 3-4</td>
+              </tr>
+              <tr>
+                <td>Luggage Capacity</td>
+                <td id="modalVehicleLuggage">Illustrative: 2-3 Bags</td>
+              </tr>
+              <tr>
+                <td>Recommended Journeys</td>
+                <td id="modalVehicleJourney">Airport &amp; Executive transfers</td>
+              </tr>
+              <tr>
+                <td>Cabin Environment</td>
+                <td>Climate Control, Privacy Glass, Mobile USB Ports</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="padding: 0.85rem; background: rgba(242, 166, 90, 0.1); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); margin-bottom: 1.5rem;">
+            <p style="font-size: 0.8rem; color: var(--color-amber);">
+              <strong>Notice:</strong> All vehicle specifications, capacities, and model classifications are illustrative demo content.
+            </p>
+          </div>
+
+          <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+            <a href="contact.html" class="btn btn-cyan">
+              <span>Enquire for This Vehicle Category</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="index.html" class="brand-identity">
+            <div class="brand-symbol">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="40" height="40" rx="10" stroke="#42C5E8" stroke-width="2" fill="#142236"/>
+                <path d="M12 28L22 14L32 28" stroke="#42C5E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 22H28" stroke="#F2A65A" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="22" cy="14" r="3" fill="#FFFFFF"/>
+              </svg>
+            </div>
+            <div class="brand-text-block">
+              <span class="brand-title">TRANSPORTATION SERVICES</span>
+              <span class="brand-subline">Premium Mobility Solutions</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Organized mobility, executive transportation, and group passenger logistics portfolio demonstration crafted by TSCG Technologies.
+          </p>
+          <div class="footer-disclaimer-card">
+            <p><strong>Demo Portfolio Notice:</strong> This website is an illustrative concept build demonstrating transportation web architecture. It does not represent an operating transport company.</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Transportation Services</a></li>
+            <li><a href="fleet.html">Our Fleet</a></li>
+            <li><a href="corporate.html">Corporate Travel</a></li>
+            <li><a href="contact.html">Contact &amp; Trip Enquiry</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="services.html#airport">Airport Transfers</a></li>
+            <li><a href="services.html#executive">Executive Transportation</a></li>
+            <li><a href="services.html#employee">Corporate Commutes</a></li>
+            <li><a href="services.html#group">Group Transportation</a></li>
+            <li><a href="services.html#event">Event Mobility</a></li>
+            <li><a href="services.html#intercity">Intercity Travel</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Demo Contact Details</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <span>0000000000</span><br>
+              <span style="font-size: 0.8rem; color: var(--color-grey-muted);">Alt: 0000000000</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>demo@example.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div>
+              <strong>Demo Hours:</strong><br>
+              <span>Monday–Saturday, 9:00 AM–6:00 PM</span><br>
+              <small style="color: var(--color-amber);">(Illustrative demo schedule)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; <span class="current-year">2026</span> Transportation Services. All rights reserved.
+        </div>
+        <div>
+          Portfolio demonstration build for TSCG Technologies.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/fleet.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
